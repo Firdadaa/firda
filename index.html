@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kalkulator cloud</h1>
+    <!-- Bagian utama kalkulator -->
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="backspace()">⌫</button>
+            <button onclick="appendSymbol('(')">(</button>
+            <button onclick="appendSymbol(')')">)</button>
+            <button onclick="appendSymbol('%')">%</button>
+            <button onclick="appendSymbol('sin(')">sin</button>
+            <button onclick="appendSymbol('cos(')">cos</button>
+            <button onclick="appendSymbol('tan(')">tan</button>
+            <button onclick="appendSymbol('sqrt(')">√</button>
+            <button onclick="appendSymbol('ln(')">ln</button>
+            <button onclick="appendSymbol('log(')">log</button>
+            <button onclick="appendSymbol('pi')">π</button>
+            <button onclick="appendSymbol('e')">e</button>
+            <button onclick="appendSymbol('+')">+</button>
+            <button onclick="appendSymbol('-')">-</button>
+            <button onclick="appendSymbol('*')">&times;</button>
+            <button onclick="appendSymbol('/')">&divide;</button>
+            <button onclick="appendSymbol('7')">7</button>
+            <button onclick="appendSymbol('8')">8</button>
+            <button onclick="appendSymbol('9')">9</button>
+            <button onclick="appendSymbol('4')">4</button>
+            <button onclick="appendSymbol('5')">5</button>
+            <button onclick="appendSymbol('6')">6</button>
+            <button onclick="appendSymbol('1')">1</button>
+            <button onclick="appendSymbol('2')">2</button>
+            <button onclick="appendSymbol('3')">3</button>
+            <button onclick="appendSymbol('0')">0</button>
+            <button onclick="appendSymbol('.')">.</button>
+            <button onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    
+    <!-- Bagian riwayat perhitungan -->
+    <div class="history" id="history"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
